@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-mona: 'Mona Sans', sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-mona);
+}
+
+/* 字体相关辅助类 */
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.htps-bg-line-white {
+  --pattern-fg: rgba(0, 0, 0, 0.5);
+  background-image: repeating-linear-gradient(315deg,
+      var(--pattern-fg) 0,
+      var(--pattern-fg) 1px,
+      transparent 1px,
+      transparent 50%);
+  background-size: 10px 10px;
+  background-attachment: fixed;
+}
+
+.htps-bg-line-black {
+  --pattern-fg: rgba(255, 255, 255, 0.5);
+  background-image: repeating-linear-gradient(315deg,
+      var(--pattern-fg) 0,
+      var(--pattern-fg) 1px,
+      transparent 1px,
+      transparent 50%);
+  background-size: 10px 10px;
+  background-attachment: fixed;
 }
