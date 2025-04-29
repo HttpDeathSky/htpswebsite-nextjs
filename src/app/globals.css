@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
 
 :root {
   --font-mona: 'Mona Sans', sans-serif;
@@ -29,24 +30,35 @@ body {
   font-style: italic;
 }
 
-.htps-bg-line-white {
-  --pattern-fg: rgba(0, 0, 0, 0.5);
-  background-image: repeating-linear-gradient(315deg,
-      var(--pattern-fg) 0,
-      var(--pattern-fg) 1px,
-      transparent 1px,
-      transparent 50%);
-  background-size: 10px 10px;
-  background-attachment: fixed;
-}
+@layer utilities {
+  .htps-bg-line {
+    --pattern-fg: rgba(0, 0, 0, 0.5);
+    background-image: repeating-linear-gradient(315deg,
+        var(--pattern-fg) 0,
+        var(--pattern-fg) 1px,
+        transparent 1px,
+        transparent 50%);
+    background-size: 10px 10px;
+    background-attachment: fixed;
+  }
 
-.htps-bg-line-black {
-  --pattern-fg: rgba(255, 255, 255, 0.5);
-  background-image: repeating-linear-gradient(315deg,
-      var(--pattern-fg) 0,
-      var(--pattern-fg) 1px,
-      transparent 1px,
-      transparent 50%);
-  background-size: 10px 10px;
-  background-attachment: fixed;
+  .dark .htps-bg-line {
+    --pattern-fg: rgba(255, 255, 255, 0.5);
+  }
+
+  .htps-debug1 {
+    border: 1px solid black;
+  }
+
+  .htps-debug1 {
+    border: 1px solid red;
+  }
+
+  .htps-debug1 {
+    border: 1px solid blue;
+  }
+
+  .dark .htps-debug1 {
+    border: 1px solid white;
+  }
 }

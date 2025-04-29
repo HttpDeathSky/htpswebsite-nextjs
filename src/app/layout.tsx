@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import "./globals.css";
 import localFont from 'next/font/local';
 import { ThemeProvider } from 'next-themes';
