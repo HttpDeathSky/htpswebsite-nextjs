@@ -94,8 +94,8 @@ export default function Features() {
                                 </div>
                             </div>
                             {/* Description Space */}
-                            <div className='mx-[4%] p-[2%] w-[40%] text-6xl overflow-hidden'>
-                                <p>
+                            <div className='mx-[4%] p-[2%] w-[40%]'>
+                                <p className='text-6xl overflow-hidden'>
                                     Dont know what to write<br />
                                     Set three lines of code<br />
                                     And then it will be displayed
