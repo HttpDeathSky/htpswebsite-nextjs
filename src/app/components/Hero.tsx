@@ -16,8 +16,8 @@ export default function Hero() {
         return null;
     }
     // dynamic pic
-    const catIcon = theme === 'dark' ? '/website/cat-kitty-white.svg' : '/website/cat-kitty-black.svg';
-    const skyIcon = theme === 'dark' ? '/website/sky-svgrepo-white.svg' : '/website/sky-svgrepo-black.svg';
+    const catIcon = theme === 'dark' ? '/cat-kitty-white.svg' : '/cat-kitty-black.svg';
+    const skyIcon = theme === 'dark' ? '/sky-svgrepo-white.svg' : '/sky-svgrepo-black.svg';
     return (
         <div className={`bg-white dark:bg-black h-14 sticky top-0 z-50`}>
             <div className={`border-b-1 border-black/9 dark:border-white/9 h-full w-full flex justify-between px-8 text-sm text-shadow-sm`}>
@@ -36,9 +36,9 @@ export default function Hero() {
                     Design By HtpSpace
                 </p>
                 <p className="flex items-center">
-                    <Link className="mx-4 hover:underline" href="/website">Docs</Link>
-                    <Link className="mx-4 hover:underline" href="/website">Blog</Link>
-                    <Link className="ml-4 hover:underline" href="/website">ShowCase</Link>
+                    <Link className="mx-4 hover:underline" href="/">Docs</Link>
+                    <Link className="mx-4 hover:underline" href="/">Blog</Link>
+                    <Link className="ml-4 hover:underline" href="/">ShowCase</Link>
                     <Image
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         className="ml-6 cursor-pointer"

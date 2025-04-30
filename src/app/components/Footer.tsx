@@ -9,32 +9,32 @@ export default function Footer() {
                     <div className={`mx-[2%] bg-white border-black/9 dark:bg-black dark:border-white/9 border-x-1 h-full flex`}>
                         <div className="pr-20 pl-2 pt-4 flex-1 flex flex-col">
                             <p className="text-ml font-bold mb-1">Learn</p>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Documentation</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Showcase</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Blog</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Playground</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Documentation</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Showcase</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Blog</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Playground</Link>
                         </div>
                         <div className={`w-7 border-x-1 border-black/9 dark:border-white/9`} />
                         <div className="pr-20 pl-2 pt-4 flex-1 flex flex-col">
                             <p className="text-ml font-bold">Tailwind Plus</p>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">UI Blocks</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Templates</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">UI Kit</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">UI Blocks</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Templates</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">UI Kit</Link>
                         </div>
                         <div className={`w-7 border-x-1 border-black/9 dark:border-white/9`} />
                         <div className="pr-20 pl-2 pt-4 flex-1 flex flex-col">
                             <p className="text-ml font-bold">Resources</p>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Refactoring UI</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Headless UI</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Heroicons</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Hero Patterns</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Refactoring UI</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Headless UI</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Heroicons</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Hero Patterns</Link>
                         </div>
                         <div className={`w-7 border-x-1 border-black/9 dark:border-white/9`} />
                         <div className="pr-20 pl-2 pt-4 flex-1 flex flex-col">
                             <p className="text-ml font-bold">Community</p>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">GitHub</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">Discord</Link>
-                            <Link className="text-sm mb-1 hover:underline" href="/website">X</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">GitHub</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">Discord</Link>
+                            <Link className="text-sm mb-1 hover:underline" href="/">X</Link>
                         </div>
                     </div>
                 </div>
