@@ -2,63 +2,65 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --font-mona: 'Mona Sans', sans-serif;
+	--font-mona: "Mona Sans", sans-serif;
 }
 
 body {
-  font-family: var(--font-mona);
+	font-family: var(--font-mona);
 }
 
 /* 字体相关辅助类 */
 .font-light {
-  font-weight: 300;
+	font-weight: 300;
 }
 
 .font-regular {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 .font-semibold {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 .font-bold {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .font-italic {
-  font-style: italic;
+	font-style: italic;
 }
 
 @layer utilities {
-  .htps-bg-line {
-    --pattern-fg: rgba(0, 0, 0, 0.5);
-    background-image: repeating-linear-gradient(315deg,
-        var(--pattern-fg) 0,
-        var(--pattern-fg) 1px,
-        transparent 1px,
-        transparent 50%);
-    background-size: 10px 10px;
-    background-attachment: fixed;
-  }
+	.htps-bg-line {
+		--pattern-fg: rgba(0, 0, 0, 0.5);
+		background-image: repeating-linear-gradient(
+			315deg,
+			var(--pattern-fg) 0,
+			var(--pattern-fg) 1px,
+			transparent 1px,
+			transparent 50%
+		);
+		background-size: 10px 10px;
+		background-attachment: fixed;
+	}
 
-  .dark .htps-bg-line {
-    --pattern-fg: rgba(255, 255, 255, 0.5);
-  }
+	.dark .htps-bg-line {
+		--pattern-fg: rgba(255, 255, 255, 0.5);
+	}
 
-  .htps-debug1 {
-    border: 1px solid black;
-  }
+	.htps-debug1 {
+		border: 1px solid black;
+	}
 
-  .htps-debug1 {
-    border: 1px solid red;
-  }
+	.htps-debug1 {
+		border: 1px solid red;
+	}
 
-  .htps-debug1 {
-    border: 1px solid blue;
-  }
+	.htps-debug1 {
+		border: 1px solid blue;
+	}
 
-  .dark .htps-debug1 {
-    border: 1px solid white;
-  }
+	.dark .htps-debug1 {
+		border: 1px solid white;
+	}
 }

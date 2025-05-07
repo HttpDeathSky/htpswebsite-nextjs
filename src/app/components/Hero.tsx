@@ -25,11 +25,11 @@ export default function Hero() {
 			? "/website/sky-svgrepo-white.svg"
 			: "/website/sky-svgrepo-black.svg";
 	return (
-		<div className={`bg-white dark:bg-black h-14 sticky top-0 z-50`}>
+		<div className={`sticky top-0 z-50 h-14 bg-white dark:bg-black`}>
 			<div
-				className={`border-b-1 border-black/9 dark:border-white/9 h-full w-full flex justify-between px-8 text-sm text-shadow-sm`}
+				className={`flex h-full w-full justify-between border-b-1 border-black/9 px-8 text-sm text-shadow-sm dark:border-white/9`}
 			>
-				<p className="flex items-center text-xl font-italic font-bold">
+				<p className="font-italic flex items-center text-xl font-bold">
 					<Image
 						onClick={() => {
 							window.scrollTo({
