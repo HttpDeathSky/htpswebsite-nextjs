@@ -1,7 +1,8 @@
 "use client";
-import { useState, useEffect } from "react"; // 确保有这行
+import { useState, useEffect } from "react";
+import BSwiper from "./Features-B-Swiper";
 
-const codeText = `1 <div className={\`border-b-1 border-black/9 dark:border-white/9 h-full w-full flex
+const codeText = `1 <div className={\`border-b-1 border-gray-950/5 dark:border-white/10 h-full w-full flex
 2\tjustify-between px-8 text-sm text-shadow-sm\`}>
 3 \t<p className="flex items-center text-xl font-italic font-bold">
 4 \t\t<Image onClick={() => {
@@ -46,17 +47,17 @@ export default function Features() {
 
 	return (
 		<div
-			className={`flex h-330 flex-col border-b-1 border-black/9 dark:border-white/9`}
+			className={`flex h-330 flex-col border-b-1 border-gray-950/5 dark:border-white/10`}
 		>
 			{/* Up Space */}
-			<div className="h-[16%] border-b-1 border-black/9 dark:border-white/9">
+			<div className="border-b-1 border-gray-950/5 dark:border-white/10">
 				<div
-					className={`htps-bg-line mx-[11%] h-full border-x-1 border-black/9 dark:border-white/9`}
+					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
 				>
 					<div
-						className={`mx-[2%] h-full border-x-1 border-black/9 bg-white dark:border-white/9 dark:bg-black`}
+						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 					>
-						<h1 className="pt-13 text-sm tracking-wide text-gray-500 dark:text-gray-300">
+						<h1 className="pt-19 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60">
 							text-8xl text-gray-950 tracking-tighter text-balance
 						</h1>
 					</div>
@@ -64,23 +65,67 @@ export default function Features() {
 			</div>
 			{/* Title */}
 			<div
-				className={`htps-bg-line mx-[11%] border-x-1 border-black/9 dark:border-white/9`}
+				className={`htps-bg-line mx-[7.5%] border-x-1 border-gray-950/5 dark:border-white/10`}
 			>
 				<div
-					className={`mx-[2%] flex h-full flex-col border-x-1 border-black/9 bg-white dark:border-white/9 dark:bg-black`}
+					className={`mx-[2.3%] flex h-full flex-col border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 				>
-					<h1 className="my-[3%] ml-[4%] overflow-hidden text-7xl tracking-tighter text-balance">
+					<h1 className="my-1 ml-1 text-8xl tracking-tighter text-balance">
 						Rapidly build modern websites without ever leaving your HTML.
 					</h1>
 				</div>
 			</div>
-			{/* Section 1 */}
-			<div className="border-y-1 border-black/9 dark:border-white/9">
+			{/* middle Space 1 */}
+			<div className="border-t-1 border-gray-950/5 dark:border-white/10">
 				<div
-					className={`htps-bg-line mx-[11%] border-x-1 border-black/9 dark:border-white/9`}
+					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
 				>
 					<div
-						className={`mx-[2%] h-full border-x-1 border-black/9 bg-white py-[1%] dark:border-white/9 dark:bg-black`}
+						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+					>
+						<h1 className="pt-5 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60">
+							text-lg text-gray-950 font-medium
+						</h1>
+					</div>
+				</div>
+			</div>
+			{/* middle Space 2 */}
+			<div className="border-t-1 border-gray-950/5 dark:border-white/10">
+				<div
+					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
+				>
+					<div
+						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+					>
+						<h1 className="p-2 text-lg/7 font-medium tracking-wide text-gray-600 dark:text-white/60">
+							A utility-first CSS framework packed with classes like flex, pt-4,
+							text-center
+							<br />
+							and rotate-90 that can be composed to build any design, directly
+							in your markup. Get started Quick search Ctrl K
+						</h1>
+					</div>
+				</div>
+			</div>
+			{/* middle Space 3 */}
+			<div className="border-t-1 border-gray-950/5 dark:border-white/10">
+				<div
+					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
+				>
+					<div
+						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+					>
+						<h1 className="pt-9 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60"></h1>
+					</div>
+				</div>
+			</div>
+			{/* Section 1 */}
+			<div className="border-y-1 border-gray-950/5 dark:border-white/10">
+				<div
+					className={`htps-bg-line mx-[7.5%] border-x-1 border-gray-950/5 dark:border-white/10`}
+				>
+					<div
+						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white py-[1%] dark:border-white/10 dark:bg-black`}
 					>
 						<div className="flex h-full w-full flex-row justify-between">
 							{/* Code Simulate */}
@@ -98,7 +143,7 @@ export default function Features() {
 											{/* `}<span className=''>{``}</span>{` */}
 											{/* text-pink-500 dark:text-pink-300 */}
 											{/* text-blue-500 dark:text-blue-300 */}
-											{/* {`<`}<span className='text-pink-500 dark:text-pink-300'>{`div`}</span>{` `}<span className='text-blue-500 dark:text-blue-300'>{`className`}</span>{`={\`border-b-1 border-black/9 dark:border-white/9 h-full w-full`} */}
+											{/* {`<`}<span className='text-pink-500 dark:text-pink-300'>{`div`}</span>{` `}<span className='text-blue-500 dark:text-blue-300'>{`className`}</span>{`={\`border-b-1 border-gray-950/5 dark:border-white/10 h-full w-full`} */}
 											{/* {` flex\n\t\tjustify-between px-8 text-sm text-shadow-sm\`}`} */}
 											{/* {`\n\t<`}<span className='text-pink-500 dark:text-pink-300'>{`p`}</span>{` `}<span className='text-blue-500 dark:text-blue-300'>{`className`}</span>{`="flex items-center text-xl font-italic font-bold">`} */}
 											{/* {`\n\t\t<`}<span className='text-pink-500 dark:text-pink-300'>{`Image`}</span>{` `}<span className='text-blue-500 dark:text-blue-300'>{`onClick`}</span>{`={() => {`} */}
@@ -122,13 +167,27 @@ export default function Features() {
 					</div>
 				</div>
 			</div>
+			{/* middle Space 4 */}
+			<div className="border-b-1 border-gray-950/5 dark:border-white/10">
+				<div
+					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
+				>
+					<div
+						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+					>
+						<h1 className="pt-9 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60"></h1>
+					</div>
+				</div>
+			</div>
 			{/* Section 2 */}
 			<div
-				className={`htps-bg-line mx-[11%] h-full border-x-1 border-black/9 dark:border-white/9`}
+				className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
 			>
 				<div
-					className={`mx-[2%] flex h-full flex-col border-x-1 border-black/9 bg-white dark:border-white/9 dark:bg-black`}
-				></div>
+					className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+				>
+					<BSwiper />
+				</div>
 			</div>
 		</div>
 	);

@@ -18,16 +18,16 @@ export default function Hero() {
 	// dynamic pic
 	const catIcon =
 		theme === "dark"
-			? "/website/cat-kitty-white.svg"
-			: "/website/cat-kitty-black.svg";
+			? "/website/svg/cat-kitty-white.svg"
+			: "/website/svg/cat-kitty-black.svg";
 	const skyIcon =
 		theme === "dark"
-			? "/website/sky-svgrepo-white.svg"
-			: "/website/sky-svgrepo-black.svg";
+			? "/website/svg/sky-svgrepo-white.svg"
+			: "/website/svg/sky-svgrepo-black.svg";
 	return (
 		<div className={`sticky top-0 z-50 h-14 bg-white dark:bg-black`}>
 			<div
-				className={`flex h-full w-full justify-between border-b-1 border-black/9 px-8 text-sm text-shadow-sm dark:border-white/9`}
+				className={`flex h-full w-full justify-between border-b-1 border-gray-950/5 px-8 text-sm text-shadow-sm dark:border-white/10`}
 			>
 				<p className="font-italic flex items-center text-xl font-bold">
 					<Image

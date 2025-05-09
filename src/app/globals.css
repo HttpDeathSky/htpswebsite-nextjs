@@ -32,7 +32,7 @@ body {
 
 @layer utilities {
 	.htps-bg-line {
-		--pattern-fg: rgba(0, 0, 0, 0.5);
+		--pattern-fg: rgba(0, 0, 0, 0.1);
 		background-image: repeating-linear-gradient(
 			315deg,
 			var(--pattern-fg) 0,
@@ -45,18 +45,18 @@ body {
 	}
 
 	.dark .htps-bg-line {
-		--pattern-fg: rgba(255, 255, 255, 0.5);
+		--pattern-fg: rgba(255, 255, 255, 0.2);
 	}
 
 	.htps-debug1 {
 		border: 1px solid black;
 	}
 
-	.htps-debug1 {
+	.htps-debug2 {
 		border: 1px solid red;
 	}
 
-	.htps-debug1 {
+	.htps-debug3 {
 		border: 1px solid blue;
 	}
 
