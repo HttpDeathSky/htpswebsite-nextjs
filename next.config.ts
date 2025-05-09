@@ -2,7 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-   basePath: '/website'
+   basePath: '/website',
+   images: {
+    domains: ['htpsdeathsky.top'],
+  },
 };
 
 export default nextConfig;
