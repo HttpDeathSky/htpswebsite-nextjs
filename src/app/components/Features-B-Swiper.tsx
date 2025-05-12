@@ -8,12 +8,12 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 const images = [
-	"/website/features_hbnt/astronaut.jpg",
-	"/website/features_hbnt/bridge.jpg",
-	"/website/features_hbnt/man.jpg",
-	"/website/features_hbnt/mouse.jpg",
-	"/website/features_hbnt/pussy.jpg",
-	"/website/features_hbnt/house.png",
+	"/website/pic/astronaut.jpg",
+	"/website/pic/bridge.jpg",
+	"/website/pic/man.jpg",
+	"/website/pic/mouse.jpg",
+	"/website/pic/pussy.jpg",
+	"/website/pic/house.png",
 ];
 
 export default function FadeSlider() {
