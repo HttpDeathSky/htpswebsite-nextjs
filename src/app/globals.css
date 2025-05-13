@@ -30,6 +30,11 @@ body {
 	font-style: italic;
 }
 
+/* 添加全局光标样式 */
+/* * {
+	cursor: none !important;
+} */
+
 @layer utilities {
 	.htps-bg-line {
 		--pattern-fg: rgba(0, 0, 0, 0.1);

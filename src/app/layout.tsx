@@ -2,6 +2,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
+import MouseTrail from './components/MouseTrail';
 
 const monaSans = localFont({
 	src: [
@@ -54,7 +55,10 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={monaSans.variable}>
-				<ThemeProvider attribute="class">{children}</ThemeProvider>
+				<ThemeProvider attribute="class">
+					<MouseTrail />
+					{children}
+				</ThemeProvider>
 			</body>
 		</html>
 	);

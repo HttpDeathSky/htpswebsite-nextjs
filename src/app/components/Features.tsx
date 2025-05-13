@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import BSwiper from "./Features-B-Swiper";
+import Boxes from "./Features-C-Gsap";
 
 const codeText = `1 <div className={\`border-b-1 border-gray-950/5 dark:border-white/10 h-full w-full flex
 2\tjustify-between px-8 text-sm text-shadow-sm\`}>
@@ -47,7 +48,7 @@ export default function Features() {
 
 	return (
 		<div
-			className={`flex h-330 flex-col border-b-1 border-gray-950/5 dark:border-white/10`}
+			className={`flex h-440 flex-col border-b-1 border-gray-950/5 dark:border-white/10`}
 		>
 			{/* Up Space */}
 			<div className="border-b-1 border-gray-950/5 dark:border-white/10">
@@ -181,12 +182,34 @@ export default function Features() {
 			</div>
 			{/* Section 2 */}
 			<div
+				className={`htps-bg-line mx-[7.5%] border-x-1 border-gray-950/5 dark:border-white/10`}
+			>
+				<div
+					className={`mx-[2.3%] h-88 border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+				>
+					<BSwiper />
+				</div>
+			</div>
+			{/* middle Space 5 */}
+			<div className="border-y-1 border-gray-950/5 dark:border-white/10">
+				<div
+					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
+				>
+					<div
+						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+					>
+						<h1 className="pt-9 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60"></h1>
+					</div>
+				</div>
+			</div>
+			{/* Section 3 */}
+			<div
 				className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
 			>
 				<div
 					className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 				>
-					<BSwiper />
+					<Boxes />
 				</div>
 			</div>
 		</div>
