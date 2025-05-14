@@ -13,66 +13,94 @@ export default function Footer() {
 					>
 						<div className="flex flex-1 flex-col pt-4 pr-20 pl-2">
 							<p className="text-ml mb-1 font-bold">Learn</p>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Documentation
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Showcase
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Blog
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Playground
-							</Link>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Documentation
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Showcase
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Blog
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Playground
+								</Link>
+							</div>
 						</div>
 						<div
 							className={`w-7 border-x-1 border-gray-950/5 dark:border-white/10`}
 						/>
 						<div className="flex flex-1 flex-col pt-4 pr-20 pl-2">
 							<p className="text-ml font-bold">Tailwind Plus</p>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								UI Blocks
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Templates
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								UI Kit
-							</Link>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									UI Blocks
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Templates
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									UI Kit
+								</Link>
+							</div>
 						</div>
 						<div
 							className={`w-7 border-x-1 border-gray-950/5 dark:border-white/10`}
 						/>
 						<div className="flex flex-1 flex-col pt-4 pr-20 pl-2">
 							<p className="text-ml font-bold">Resources</p>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Refactoring UI
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Headless UI
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Heroicons
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Hero Patterns
-							</Link>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Refactoring UI
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Headless UI
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Heroicons
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Hero Patterns
+								</Link>
+							</div>
 						</div>
 						<div
 							className={`w-7 border-x-1 border-gray-950/5 dark:border-white/10`}
 						/>
 						<div className="flex flex-1 flex-col pt-4 pr-20 pl-2">
 							<p className="text-ml font-bold">Community</p>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								GitHub
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								Discord
-							</Link>
-							<Link className="mb-1 text-sm hover:underline" href="/">
-								X
-							</Link>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									GitHub
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									Discord
+								</Link>
+							</div>
+							<div>
+								<Link className="mb-1 text-sm hover:underline" href="/">
+									X
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
