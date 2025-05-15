@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export default function updateLog() {
 	return (
-		<main className="flex min-h-screen flex-col">
+		<main className="flex min-h-screen flex-col dark:bg-black">
 			<Hero />
 			<UpdateLog />
 			{/* <Test /> */}

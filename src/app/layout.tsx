@@ -2,7 +2,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
-import MouseTrail from './components/MouseTrail';
+import MouseTrail from "./components/MouseTrail";
 
 const monaSans = localFont({
 	src: [

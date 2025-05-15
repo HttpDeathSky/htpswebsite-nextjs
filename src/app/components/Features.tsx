@@ -48,7 +48,7 @@ export default function Features() {
 
 	return (
 		<div
-			className={`flex h-440 flex-col border-b-1 border-gray-950/5 dark:border-white/10`}
+			className={`flex flex-1 flex-col border-b-1 border-gray-950/5 dark:border-white/10`}
 		>
 			{/* Up Space */}
 			<div className="border-b-1 border-gray-950/5 dark:border-white/10">
@@ -58,7 +58,7 @@ export default function Features() {
 					<div
 						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 					>
-						<h1 className="pt-19 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60">
+						<h1 className="overflow-hidden pt-[7%] pb-1 pl-1 text-[clamp(0.5rem,0.8vw,2rem)] tracking-wide whitespace-nowrap text-black/60 dark:text-white/60">
 							text-8xl text-gray-950 tracking-tighter text-balance
 						</h1>
 					</div>
@@ -69,10 +69,12 @@ export default function Features() {
 				className={`htps-bg-line mx-[7.5%] border-x-1 border-gray-950/5 dark:border-white/10`}
 			>
 				<div
-					className={`mx-[2.3%] flex h-full flex-col border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+					className={`mx-[2.3%] flex flex-col border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 				>
-					<h1 className="my-1 ml-1 text-8xl tracking-tighter text-balance">
-						Rapidly build modern websites without ever leaving your HTML.
+					<h1 className="my-1 ml-1 overflow-hidden text-[clamp(1rem,6vw,6rem)] leading-none tracking-tighter text-balance whitespace-nowrap">
+						Rapidly build modern websites
+						<br />
+						without ever leaving your HTML.
 					</h1>
 				</div>
 			</div>
@@ -84,7 +86,7 @@ export default function Features() {
 					<div
 						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 					>
-						<h1 className="pt-5 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60">
+						<h1 className="overflow-hidden pt-[2%] pb-1 pl-1 text-[clamp(0.5rem,0.8vw,2rem)] tracking-wide whitespace-nowrap text-black/60 dark:text-white/60">
 							text-lg text-gray-950 font-medium
 						</h1>
 					</div>
@@ -98,7 +100,7 @@ export default function Features() {
 					<div
 						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 					>
-						<h1 className="p-2 text-lg/7 font-medium tracking-wide text-gray-600 dark:text-white/60">
+						<h1 className="overflow-hidden p-2 text-[clamp(0.5rem,1vw,2rem)] font-medium tracking-wide whitespace-nowrap text-gray-600 dark:text-white/60">
 							A utility-first CSS framework packed with classes like flex, pt-4,
 							text-center
 							<br />
@@ -116,21 +118,21 @@ export default function Features() {
 					<div
 						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 					>
-						<h1 className="pt-9 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60"></h1>
+						<div className="pt-[2%]"></div>
 					</div>
 				</div>
 			</div>
-			{/* Section 1 */}
+			{/* Code Space */}
 			<div className="border-y-1 border-gray-950/5 dark:border-white/10">
 				<div
-					className={`htps-bg-line mx-[7.5%] border-x-1 border-gray-950/5 dark:border-white/10`}
+					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
 				>
 					<div
 						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white py-[1%] dark:border-white/10 dark:bg-black`}
 					>
-						<div className="flex h-full w-full flex-row justify-between">
+						<div className="flex h-123 flex-row">
 							{/* Code Simulate */}
-							<div className="ml-[4%] h-[493px] w-[67%] overflow-hidden rounded-lg shadow-lg">
+							<div className="ml-[4%] flex-3/5 overflow-hidden rounded-lg shadow-lg">
 								{/* Simulate Mac Window */}
 								<div className="flex items-center justify-start bg-gray-200 px-4 py-2 dark:bg-gray-900">
 									<span className="mr-2 h-3 w-3 rounded-full bg-red-500"></span>
@@ -138,18 +140,19 @@ export default function Features() {
 									<span className="h-3 w-3 rounded-full bg-green-500"></span>
 								</div>
 								{/* Code Body */}
-								<div className="h-full overflow-auto bg-gray-100 px-4 pt-4 font-mono text-sm text-gray-500 dark:bg-gray-800 dark:text-gray-100">
-									<pre className="">
-										<code className="">
+								<div className="h-full bg-gray-100 px-4 pt-4 font-mono text-sm text-gray-500 dark:bg-gray-800 dark:text-gray-100">
+									<pre className="h-full">
+										<code className="h-full">
 											{displayedText}
+											{/* {codeText} */}
 											<span className="animate-pulse">|</span>
 										</code>
 									</pre>
 								</div>
 							</div>
 							{/* Description Space */}
-							<div className="mx-[4%] w-[40%] p-[2%]">
-								<p className="overflow-hidden text-6xl">
+							<div className="mx-[4%] flex-2/5 p-[2%]">
+								<p className="text-[clamp(1rem,3.3vw,4rem)] leading-none">
 									Dont know what to write
 									<br />
 									Set three lines of code
@@ -169,7 +172,7 @@ export default function Features() {
 					<div
 						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 					>
-						<h1 className="pt-9 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60"></h1>
+						<div className="pt-[2%]"></div>
 					</div>
 				</div>
 			</div>
@@ -191,7 +194,7 @@ export default function Features() {
 					<div
 						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 					>
-						<h1 className="pt-9 pb-1 pl-1 text-sm tracking-wide text-black/60 dark:text-white/60"></h1>
+						<div className="pt-[2%]"></div>
 					</div>
 				</div>
 			</div>

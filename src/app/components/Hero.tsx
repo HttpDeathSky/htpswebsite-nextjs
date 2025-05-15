@@ -25,7 +25,9 @@ export default function Hero() {
 			? "/website/svg/sky-svgrepo-white.svg"
 			: "/website/svg/sky-svgrepo-black.svg";
 	return (
-		<div className={`sticky top-0 z-50 h-14 bg-white dark:bg-black`}>
+		<div
+			className={`sticky top-0 z-50 h-14 flex-none overflow-auto bg-white dark:bg-black`}
+		>
 			<div
 				className={`flex h-full w-full justify-between border-b-1 border-gray-950/5 px-8 text-sm text-shadow-sm dark:border-white/10`}
 			>

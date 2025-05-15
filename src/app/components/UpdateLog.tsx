@@ -73,7 +73,7 @@ export default function Features() {
 			className={`flex flex-1 flex-col border-b-1 border-gray-950/5 dark:border-white/10`}
 		>
 			{/* Up Space */}
-			<div className="border-b-1 border-gray-950/5 dark:border-white/10">
+			<div className="h-26 border-b-1 border-gray-950/5 dark:border-white/10">
 				<div
 					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
 				>
