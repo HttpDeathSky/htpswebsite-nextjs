@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
 	basePath: "/website",
 	images: {
 		// unoptimized: true,
-		domains: ["htpsdeathsky.top"],
+		// domains: ["htpsdeathsky.top"],
 	},
 };
 

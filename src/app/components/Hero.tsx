@@ -46,14 +46,14 @@ export default function Hero() {
 					Design By HtpSpace
 				</p>
 				<p className="flex items-center">
-					<Link className="mx-4 hover:underline" href="/website">
+					<Link className="mx-4 hover:underline" href="/">
 						Docs
 					</Link>
-					<Link className="mx-4 hover:underline" href="/website">
+					<Link className="mx-4 hover:underline" href="/">
 						Blog
 					</Link>
-					<Link className="ml-4 hover:underline" href="/website">
-						ShowCase
+					<Link className="ml-4 hover:underline" href="/updateLog">
+						UpdateLog
 					</Link>
 					<Image
 						onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import BSwiper from "./Features-B-Swiper";
+import Slide from "./Features-B-Slide";
 import Boxes from "./Features-C-Gsap";
 
 const codeText = `1 <div className={\`border-b-1 border-gray-950/5 dark:border-white/10 h-full w-full flex
@@ -141,13 +141,6 @@ export default function Features() {
 								<div className="h-full overflow-auto bg-gray-100 px-4 pt-4 font-mono text-sm text-gray-500 dark:bg-gray-800 dark:text-gray-100">
 									<pre className="">
 										<code className="">
-											{/* `}<span className=''>{``}</span>{` */}
-											{/* text-pink-500 dark:text-pink-300 */}
-											{/* text-blue-500 dark:text-blue-300 */}
-											{/* {`<`}<span className='text-pink-500 dark:text-pink-300'>{`div`}</span>{` `}<span className='text-blue-500 dark:text-blue-300'>{`className`}</span>{`={\`border-b-1 border-gray-950/5 dark:border-white/10 h-full w-full`} */}
-											{/* {` flex\n\t\tjustify-between px-8 text-sm text-shadow-sm\`}`} */}
-											{/* {`\n\t<`}<span className='text-pink-500 dark:text-pink-300'>{`p`}</span>{` `}<span className='text-blue-500 dark:text-blue-300'>{`className`}</span>{`="flex items-center text-xl font-italic font-bold">`} */}
-											{/* {`\n\t\t<`}<span className='text-pink-500 dark:text-pink-300'>{`Image`}</span>{` `}<span className='text-blue-500 dark:text-blue-300'>{`onClick`}</span>{`={() => {`} */}
 											{displayedText}
 											<span className="animate-pulse">|</span>
 										</code>
@@ -187,7 +180,7 @@ export default function Features() {
 				<div
 					className={`mx-[2.3%] h-88 border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 				>
-					<BSwiper />
+					<Slide />
 				</div>
 			</div>
 			{/* middle Space 5 */}
