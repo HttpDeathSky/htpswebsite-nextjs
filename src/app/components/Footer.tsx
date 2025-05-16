@@ -14,10 +14,10 @@ export default function Footer() {
 				>
 					{/* main */}
 					<div
-						className={`mx-[2.3%] flex h-full flex-row overflow-auto border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
+						className={`mx-[2.3%] grid h-full grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-4 overflow-auto border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 					>
 						{/* Link Space 1 */}
-						<div className="flex flex-1 flex-col pt-4 pr-20 pl-2">
+						<div className="flex flex-col border-gray-950/5 pt-4 pr-2 pl-2 dark:border-white/10">
 							<p className="text-ml mb-1 font-bold">Learn</p>
 							<div>
 								<Link className="mb-1 text-sm hover:underline" href="/">
@@ -40,11 +40,11 @@ export default function Footer() {
 								</Link>
 							</div>
 						</div>
-						<div
+						{/* <div
 							className={`w-7 border-x-1 border-gray-950/5 dark:border-white/10`}
-						/>
+						/> */}
 						{/* Link Space 2 */}
-						<div className="flex flex-1 flex-col pt-4 pr-20 pl-2">
+						<div className="flex flex-col border-gray-950/5 pt-4 pr-2 pl-2 dark:border-white/10">
 							<p className="text-ml font-bold">Tailwind Plus</p>
 							<div>
 								<Link className="mb-1 text-sm hover:underline" href="/">
@@ -62,11 +62,11 @@ export default function Footer() {
 								</Link>
 							</div>
 						</div>
-						<div
+						{/* <div
 							className={`w-7 border-x-1 border-gray-950/5 dark:border-white/10`}
-						/>
+						/> */}
 						{/* Link Space 3 */}
-						<div className="flex flex-1 flex-col pt-4 pr-20 pl-2">
+						<div className="flex flex-col border-gray-950/5 pt-4 pr-2 pl-2 dark:border-white/10">
 							<p className="text-ml font-bold">Resources</p>
 							<div>
 								<Link className="mb-1 text-sm hover:underline" href="/">
@@ -89,11 +89,11 @@ export default function Footer() {
 								</Link>
 							</div>
 						</div>
-						<div
+						{/* <div
 							className={`w-7 border-x-1 border-gray-950/5 dark:border-white/10`}
-						/>
+						/> */}
 						{/* Link Space 4 */}
-						<div className="flex flex-1 flex-col pt-4 pr-20 pl-2">
+						<div className="flex flex-col border-gray-950/5 pt-4 pr-2 pl-2 dark:border-white/10">
 							<p className="text-ml font-bold">Community</p>
 							<div>
 								<Link className="mb-1 text-sm hover:underline" href="/">

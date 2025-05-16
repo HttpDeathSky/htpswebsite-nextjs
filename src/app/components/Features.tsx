@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Slide from "./Features-B-Slide";
-import Boxes from "./Features-C-Gsap";
+// import Boxes from "./Features-C-Gsap";
 
 const codeText = `1 <div className={\`border-b-1 border-gray-950/5 dark:border-white/10 h-full w-full flex
 2\tjustify-between px-8 text-sm text-shadow-sm\`}>
@@ -29,7 +29,19 @@ const codeText = `1 <div className={\`border-b-1 border-gray-950/5 dark:border-w
 export default function Features() {
 	const [displayedText, setDisplayedText] = useState("");
 	const [index, setIndex] = useState(0);
+	const [startTyping, setStartTyping] = useState(false);
+
 	useEffect(() => {
+		const initTimer = setTimeout(() => {
+			setStartTyping(true);
+		}, 2000);
+
+		return () => clearTimeout(initTimer);
+	}, []);
+
+	useEffect(() => {
+		if (!startTyping) return;
+
 		const typingInterval = setInterval(() => {
 			setDisplayedText((prev) => prev + codeText.charAt(index));
 			setIndex((prev) => prev + 1);
@@ -44,7 +56,7 @@ export default function Features() {
 		}
 
 		return () => clearInterval(typingInterval);
-	}, [index]);
+	}, [index, startTyping]);
 
 	return (
 		<div
@@ -78,7 +90,7 @@ export default function Features() {
 					</h1>
 				</div>
 			</div>
-			{/* middle Space 1 */}
+			{/* Text Space 1 */}
 			<div className="border-t-1 border-gray-950/5 dark:border-white/10">
 				<div
 					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
@@ -92,7 +104,7 @@ export default function Features() {
 					</div>
 				</div>
 			</div>
-			{/* middle Space 2 */}
+			{/* Text Space 2 */}
 			<div className="border-t-1 border-gray-950/5 dark:border-white/10">
 				<div
 					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
@@ -110,7 +122,7 @@ export default function Features() {
 					</div>
 				</div>
 			</div>
-			{/* middle Space 3 */}
+			{/* Space 1 */}
 			<div className="border-t-1 border-gray-950/5 dark:border-white/10">
 				<div
 					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
@@ -130,7 +142,7 @@ export default function Features() {
 					<div
 						className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white py-[1%] dark:border-white/10 dark:bg-black`}
 					>
-						<div className="flex h-123 flex-row">
+						<div className="flex h-123 flex-col md:flex-row">
 							{/* Code Simulate */}
 							<div className="ml-[4%] flex-3/5 overflow-hidden rounded-lg shadow-lg">
 								{/* Simulate Mac Window */}
@@ -140,7 +152,7 @@ export default function Features() {
 									<span className="h-3 w-3 rounded-full bg-green-500"></span>
 								</div>
 								{/* Code Body */}
-								<div className="h-full bg-gray-100 px-4 pt-4 font-mono text-sm text-gray-500 dark:bg-gray-800 dark:text-gray-100">
+								<div className="h-full bg-gray-100 px-4 pt-4 font-mono text-[clamp(0.5rem,0.8vw,2rem)] text-gray-500 dark:bg-gray-800 dark:text-gray-100">
 									<pre className="h-full">
 										<code className="h-full">
 											{displayedText}
@@ -151,7 +163,7 @@ export default function Features() {
 								</div>
 							</div>
 							{/* Description Space */}
-							<div className="mx-[4%] flex-2/5 p-[2%]">
+							<div className="mx-[4%] my-[4%] flex-2/5 p-[2%] md:my-[0%]">
 								<p className="text-[clamp(1rem,3.3vw,4rem)] leading-none">
 									Dont know what to write
 									<br />
@@ -164,7 +176,7 @@ export default function Features() {
 					</div>
 				</div>
 			</div>
-			{/* middle Space 4 */}
+			{/* Space 2 */}
 			<div className="border-b-1 border-gray-950/5 dark:border-white/10">
 				<div
 					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
@@ -176,7 +188,7 @@ export default function Features() {
 					</div>
 				</div>
 			</div>
-			{/* Section 2 */}
+			{/* Slide */}
 			<div
 				className={`htps-bg-line mx-[7.5%] border-x-1 border-gray-950/5 dark:border-white/10`}
 			>
@@ -186,7 +198,7 @@ export default function Features() {
 					<Slide />
 				</div>
 			</div>
-			{/* middle Space 5 */}
+			{/* Space 3 */}
 			<div className="border-y-1 border-gray-950/5 dark:border-white/10">
 				<div
 					className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
@@ -198,14 +210,15 @@ export default function Features() {
 					</div>
 				</div>
 			</div>
-			{/* Section 3 */}
+			{/* Boxes 3 */}
 			<div
 				className={`htps-bg-line mx-[7.5%] h-full border-x-1 border-gray-950/5 dark:border-white/10`}
 			>
 				<div
 					className={`mx-[2.3%] h-full border-x-1 border-gray-950/5 bg-white dark:border-white/10 dark:bg-black`}
 				>
-					<Boxes />
+					{/* <Boxes /> */}
+					<div className="h-22"></div>
 				</div>
 			</div>
 		</div>

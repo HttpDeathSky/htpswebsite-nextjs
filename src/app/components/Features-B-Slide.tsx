@@ -53,13 +53,13 @@ export default function Slide() {
 	);
 
 	return (
-		<div className="flex-rol flex h-full w-full justify-between rounded-2xl bg-gray-100 p-[2%] dark:bg-black">
-			{/* 左侧内容区域 */}
-			<div className="h-full w-2/5">
+		<div className="flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 p-[2%] md:flex-row dark:bg-black">
+			{/* 内容区域 */}
+			<div className="h-full flex-2/5 p-[5%]">
 				<h1>Dont know what to place here</h1>
 			</div>
-			{/* 右侧轮播图区域 */}
-			<div className="h-full w-3/5 overflow-hidden rounded-3xl">
+			{/* 轮播图区域 */}
+			<div className="h-full flex-3/5 overflow-hidden rounded-3xl">
 				{/* 轮播容器 */}
 				<div ref={sliderRef} className="flex h-full">
 					{/* 第一组图片 */}
