@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Login from "@/app/auth/Login";
 
 export default function Hero() {
 	const { theme, setTheme } = useTheme();
@@ -12,6 +13,7 @@ export default function Hero() {
 	const [open, setOpen] = useState(false);
 	const menuRef = useRef<HTMLDivElement>(null);
 	const containerRef = useRef<HTMLDivElement>(null);
+	const [showLogin, setShowLogin] = useState(false);
 
 	// 主题相关函数
 	const getThemeIcons = () => ({
@@ -67,9 +69,9 @@ export default function Hero() {
 		<>
 			<Link
 				className={`${isMobile ? "mb-4 flex justify-end" : "mx-4"} hover:underline`}
-				href="/"
+				href="/ai"
 			>
-				<span>Docs</span>
+				<span>AI Space</span>
 			</Link>
 			<Link
 				className={`${isMobile ? "mb-4 flex justify-end" : "mx-4"} hover:underline`}
@@ -78,16 +80,26 @@ export default function Hero() {
 				<span>Blog</span>
 			</Link>
 			<Link
-				className={`${isMobile ? "flex justify-end" : "ml-4"} hover:underline`}
+				className={`${isMobile ? "mb-4 flex justify-end" : "mx-4"} hover:underline`}
 				href="/updateLog"
 			>
 				<span>UpdateLog</span>
 			</Link>
+			<span
+				className={`${isMobile ? "flex justify-end" : "mx-4"} cursor-pointer hover:underline`}
+				onClick={() => {
+					setShowLogin(true);
+					setOpen(false);
+				}}
+			>
+				Login
+			</span>
 		</>
 	);
 
 	return (
 		<div className="sticky top-0 z-50 flex h-14 flex-none justify-between border-b-1 border-gray-950/5 bg-white px-8 text-sm text-shadow-sm dark:border-white/10 dark:bg-black">
+			{showLogin && <Login onClose={() => setShowLogin(false)} />}
 			{/* Logo 区域 */}
 			<div className="flex items-center text-xl">
 				<Image

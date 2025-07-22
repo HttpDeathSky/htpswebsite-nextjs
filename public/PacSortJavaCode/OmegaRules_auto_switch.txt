@@ -1,0 +1,409 @@
+[SwitchyOmega Conditions]
+@with result
+
+@note 未知服务
+*.6sc.co +proxy
+@note 浏览器桥接服务
+*.__bridge_loaded__ +proxy
+@note 广告服务
+*.adnxs.com +proxy
+@note 分析服务
+*.airpr.com +proxy
+@note Google API服务
+*.ajax.googleapis.com +proxy
+@note 数据分析服务
+*.amplitude.com +proxy
+@note JavaScript动画库
+*.animejs.com +proxy
+@note AI聊天服务
+*.anthropic.com +proxy
+@note 用户体验分析服务
+*.auryc.com +proxy
+@note GitHub头像服务
+*.avatars.githubusercontent.com +proxy
+@note CDN服务
+*.b-cdn.net +proxy
+@note 教育网站
+*.badgirlsbible.com +proxy
+@note 币安云服务
+*.binance.cloud +proxy
+@note 币安交易所
+*.binance.com +proxy
+@note 币安美国站
+*.binance.us +proxy
+@note 比特工厂
+*.bitfactory.cn +proxy
+@note 密码管理器
+*.bitwarden.com +proxy
+@note 币安静态资源
+*.bnbstatic.com +proxy
+@note 币安追踪服务
+*.bntrace.com +proxy
+@note Bootstrap CDN
+*.bootstrapcdn.com +proxy
+@note Bluesky社交平台
+*.bsky.app +proxy
+@note GitHub图片代理
+*.camo.githubusercontent.com +proxy
+@note 字体服务
+*.cdnfonts.com +proxy
+@note CGI服务
+*.cgicgi.io +proxy
+@note ChatGPT服务
+*.chatgpt.com +proxy
+@note 苹果县网站
+*.cidercounty.org.uk +proxy
+@note 微软Clarity分析
+*.clarity.ms +proxy
+@note ClashVerge网站
+*.clashverge.dev +proxy
+@note Claude AI服务
+*.claude.ai +proxy
+@note Google Cloud服务
+*.cloud.google.com +proxy
+@note Cloudflare服务
+*.cloudflare.com +proxy
+@note Cloudflare分析
+*.cloudflareinsights.com +proxy
+@note Cloudinary图片服务
+*.cloudinary.com +proxy
+@note CoinEx交易所
+*.coinex.com +proxy
+@note CoinGecko行情
+*.coingecko.com +proxy
+@note CoinMarketCap行情
+*.coinmarketcap.com +proxy
+@note Cookiebot服务
+*.cookiebot.com +proxy
+@note CookieLaw服务
+*.cookielaw.org +proxy
+@note COTI支付服务
+*.coti.io +proxy
+@note Crisp聊天服务
+*.crisp.chat +proxy
+@note Google CSP服务
+*.csp.withgoogle.com +proxy
+@note CTF资产服务
+*.ctfassets.net +proxy
+@note Cursor服务
+*.cursor.com +proxy
+@note CloudFront服务
+*.d36jcksde1wxzq.cloudfront.net +proxy
+@note CloudFront服务
+*.d6tizftlrpuof.cloudfront.net +proxy
+@note DDClient服务
+*.ddclient.net +proxy
+@note DeepL翻译服务
+*.deepl.com +proxy
+@note Discord邀请
+*.discord.gg +proxy
+@note CloudFront服务
+*.djeqr6to3dedg.cloudfront.net +proxy
+@note DNS查找服务
+*.dns-finder.com +proxy
+@note Docker服务
+*.docker.com +proxy
+@note Google文档
+*.docs.google.com +proxy
+@note Google涂鸦
+*.doodles.google +proxy
+@note DoubleClick广告
+*.doubleclick.net +proxy
+@note Google云盘
+*.drive.google.com +proxy
+@note Dynu动态DNS
+*.dynu.com +proxy
+@note ECCDN服务
+*.eccdnx.com +proxy
+@note 以太坊官网
+*.ethereum.org +proxy
+@note Etherscan区块链浏览器
+*.etherscan.io +proxy
+@note Facebook社交平台
+*.facebook.com +proxy
+@note Facebook网络
+*.facebook.net +proxy
+@note Figma设计工具
+*.figma.com +proxy
+@note Flutter开发框架
+*.flutter.dev +proxy
+@note FontAwesome图标
+*.fontawesome.com +proxy
+@note Google字体
+*.fonts.googleapis.com +proxy
+@note Golang GCP服务
+*.gcp.golang.org +proxy
+@note Google图片
+*.ggpht.com +proxy
+@note GitHub代码托管
+*.github.com +proxy
+@note GitHub资源
+*.githubassets.com +proxy
+@note Gmail邮箱
+*.gmail.com +proxy
+@note GoDaddy域名注册
+*.godaddy.com +proxy
+@note Google Analytics分析
+*.google-analytics.com +proxy
+@note Google搜索
+*.google.com +proxy
+@note Google香港
+*.google.com.hk +proxy
+@note Google新加坡
+*.google.com.sg +proxy
+@note Google广告服务
+*.googleadservices.com +proxy
+@note Google API服务
+*.googleapis.com +proxy
+@note Google Tag Manager
+*.googletagmanager.com +proxy
+@note Google用户内容
+*.googleusercontent.com +proxy
+@note Google视频
+*.googlevideo.com +proxy
+@note Gravatar头像
+*.gravatar.com +proxy
+@note Google静态资源
+*.gstatic.com +proxy
+@note Google Hangouts
+*.hangouts.google.com +proxy
+@note HAProxy负载均衡
+*.haproxy.com +proxy
+@note hCaptcha验证码
+*.hcaptcha.com +proxy
+@note Heap分析
+*.heapanalytics.com +proxy
+@note Hugging Face空间
+*.hf.space +proxy
+@note Hoppscotch API工具
+*.hoppscotch.com +proxy
+@note Hoppscotch API工具
+*.hoppscotch.io +proxy
+@note Hugging Face平台
+*.huggingface.co +proxy
+@note IBM官网
+*.ibm.com +proxy
+@note Google身份验证工具
+*.identitytoolkit.googleapis.com +proxy
+@note Imgix图片服务
+*.imgix.net +proxy
+@note Imgur图片分享
+*.imgur.com +proxy
+@note Infura区块链服务
+*.infura.io +proxy
+@note Intercom客服
+*.intercom.io +proxy
+@note Intercom CDN
+*.intercomcdn.com +proxy
+@note IP138查询
+*.ip138.com +proxy
+@note IP地址查询
+*.ipaddress.my +proxy
+@note IPify IP查询
+*.ipify.org +proxy
+@note IPinYou广告
+*.ipinyou.com +proxy
+@note JetBrains开发工具
+*.jetbrains.com +proxy
+@note Google JNN-PA服务
+*.jnn-pa.googleapis.com +proxy
+@note jsDelivr CDN
+*.jsdelivr.net +proxy
+@note JSON Crack工具
+*.jsoncrack.com +proxy
+@note Twitch图片
+*.jtvnw.net +proxy
+@note LaunchDarkly功能标志
+*.launchdarkly.com +proxy
+@note LearnBlockchain区块链学习
+*.learnblockchain.cn +proxy
+@note Line静态资源
+*.line-scdn.net +proxy
+@note Microsoft Live服务
+*.live.com +proxy
+@note Lottie动画文件
+*.lottiefiles.com +proxy
+@note Gmail邮箱
+*.mail.google.com +proxy
+@note Google地图
+*.maps.google.com +proxy
+@note Marketo营销
+*.marketo.net +proxy
+@note Matomo分析
+*.matomo.cloud +proxy
+@note Medium博客
+*.medium.com +proxy
+@note MetaCubeX GitHub页面
+*.metacubex.github.io +proxy
+@note MetaCubeX官网
+*.metacubex.one +proxy
+@note MetaMask GitHub页面
+*.metamask.github.io +proxy
+@note MetaMask钱包
+*.metamask.io +proxy
+@note Marketo响应
+*.mktoresp.com +proxy
+@note MongoDB数据库
+*.mongodb.com +proxy
+@note Next.js框架
+*.nextjs.org +proxy
+@note Notion笔记
+*.notion.com +proxy
+@note Notion笔记
+*.notion.so +proxy
+@note NVIDIA官网
+*.nvidia.com +proxy
+@note OAI静态资源
+*.oaistatic.com +proxy
+@note GitHub对象
+*.objects.githubusercontent.com +proxy
+@note Microsoft Office
+*.office.net +proxy
+@note OneSignal推送
+*.onesignal.com +proxy
+@note OpenAI官网
+*.openai.com +proxy
+@note OpenVPN服务
+*.openvpn.net +proxy
+@note Vercel Pages
+*.pages.dev +proxy
+@note Google相册
+*.photos.google.com +proxy
+@note Pinterest图片
+*.pinimg.com +proxy
+@note Pinterest社交平台
+*.pinterest.com +proxy
+@note Google Play商店
+*.play.google.com +proxy
+@note Google Play用户内容
+*.play.googleusercontent.com +proxy
+@note PlayDeltaForce游戏
+*.playdeltaforce.com +proxy
+@note Proxifier代理工具
+*.proxifier.com +proxy
+@note Naver静态资源
+*.pstatic.net +proxy
+@note Queniuqe网站
+*.queniuqe.com +proxy
+@note Quora问答
+*.quora.com +proxy
+@note GitHub原始内容
+*.raw.githubusercontent.com +proxy
+@note Razord网站
+*.razord.top +proxy
+@note Reddit图片
+*.redd.it +proxy
+@note Reddit社交平台
+*.reddit.com +proxy
+@note Reddit媒体
+*.redditmedia.com +proxy
+@note Reddit静态资源
+*.redditstatic.com +proxy
+@note Remix Project GitHub页面
+*.remix-project-org.github.io +proxy
+@note Remix Project官网
+*.remix-project.org +proxy
+@note Remix Project官网
+*.remixproject.org +proxy
+@note Rockstar游戏
+*.rockstargames.com +proxy
+@note SaaS Exchange
+*.saasexch.com +proxy
+@note SagerNet官网
+*.sagernet.org +proxy
+@note Spotify CDN
+*.scdn.co +proxy
+@note Segment分析
+*.segment.com +proxy
+@note Segment分析
+*.segment.io +proxy
+@note Sentry CDN
+*.sentry-cdn.com +proxy
+@note Sentry错误监控
+*.sentry.io +proxy
+@note Snyk Widget
+*.snyk-widget.herokuapp.com +proxy
+@note Solidity语言
+*.soliditylang.org +proxy
+@note Splunk云服务
+*.splunkcloud.com +proxy
+@note Spotify音乐
+*.spotify.com +proxy
+@note Spotify CDN
+*.spotifycdn.com +proxy
+@note StaticBlitz静态资源
+*.staticblitz.com +proxy
+@note Steam社区
+*.steamcommunity.com +proxy
+@note Steam数据库
+*.steamdb.info +proxy
+@note Steam游戏平台
+*.steampowered.com +proxy
+@note Google存储
+*.storage.googleapis.com +proxy
+@note Stripe支付
+*.stripe.com +proxy
+@note Techland官网
+*.techland.net +proxy
+@note Techland GG
+*.techlandgg.com +proxy
+@note TikTok短视频
+*.tiktok.com +proxy
+@note ToDiagram工具
+*.todiagram.com +proxy
+@note Google翻译
+*.translate.googleapis.com +proxy
+@note TrustArc隐私管理
+*.trustarc.com +proxy
+@note Trust Wallet钱包
+*.trustwallet.com +proxy
+@note Twitch视频
+*.ttvnw.net +proxy
+@note Twitter图片
+*.twimg.com +proxy
+@note Twitch直播
+*.twitch.tv +proxy
+@note Twitter社交平台
+*.twitter.com +proxy
+@note Typekit字体
+*.typekit.net +proxy
+@note Usabilla用户反馈
+*.usabilla.com +proxy
+@note 滑铁卢大学
+*.uwaterloo.ca +proxy
+@note V2Fly官网
+*.v2fly.org +proxy
+@note Vercel AI
+*.vercel.ai +proxy
+@note Vercel平台
+*.vercel.com +proxy
+@note Vimeo视频
+*.vimeo.com +proxy
+@note VWO优化
+*.visualwebsiteoptimizer.com +proxy
+@note Google WAA-PA服务
+*.waa-pa.googleapis.com +proxy
+@note WalletConnect服务
+*.walletconnect.com +proxy
+@note WalletConnect官网
+*.walletconnect.org +proxy
+@note WhatIsMyIPAddress查询
+*.whatismyipaddress.com +proxy
+@note 维基百科
+*.wikipedia.org +proxy
+@note Wootric用户反馈
+*.wootric.com +proxy
+@note WordPress图片
+*.wp.com +proxy
+@note WTF Academy
+*.wtf.academy +proxy
+@note Twitter社交平台
+*.x.com +proxy
+@note Your Server
+*.your-server.de +proxy
+@note YouTube视频
+*.youtube.com +proxy
+@note YouTube图片
+*.ytimg.com +proxy
+
+* +direct
